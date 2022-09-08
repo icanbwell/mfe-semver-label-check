@@ -1,0 +1,9 @@
+name: 'MFE semver label check'
+description: 'Ensure that the pull request has a necessary semver label'
+inputs:
+  github-token:
+    description: 'The token used for auth with github'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
